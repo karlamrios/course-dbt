@@ -77,19 +77,3 @@ select round(avg (sessions_per_hour),0)
   from b 
   group by first_detection --this subquery shows 229 unique sessions for 2021-02-11T14:00:00Z, seems like an anomally date
 ) as a
-
-/* Feedback and notes from a person who knows nothing about dbt or snowflake (which is often referrenced) - mostly analytics background
-Difficulties with CLI / dbt
-1. Even though it looks like you can export data, I couldn't make it WORK
-2. How is a project saved?  Couldn't figure that out without having to push everything through GIT
-3. I dont understand what the profile yml file is FOR
-4. 
-Difficulties with Course material
-1.  It is not organized in a way that is easy to quickly find what you need since there is no index or glossary
-2.  It would be easier to follow along the content referring videos and images, if they were actually labeled and I could easily find what I needed
-3.  Set up steps in video without a checklist were frustrating.  Example: Video moved too fast and I only have laptop to work with.  Flipping between browswer pages
-and maximazing the video so I could read what the person was typing was not frustrating. Sometimes video was too fast for me to understand what command or icon was 
-being clicked.  It also was very time consuming to find the exact spot of the video I needed to re-watch.
-
-
-*/
